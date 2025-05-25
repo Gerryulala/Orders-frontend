@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import StatusBadge from './StatusBadge';
-import '../OrderList.css';
+import StatusBadge from '../StatusBadge';
+import './OrderList.css'; // ✅ y asegúrate de importar los estilos correctamente
 
 export default function OrderList({ orders }) {
   const [search, setSearch] = useState('');
@@ -18,7 +18,7 @@ export default function OrderList({ orders }) {
     <div className="order-list-wrapper">
       <div className="order-list-container">
         <h2>📦 Órdenes</h2>
-        
+
         <input
           className="search-input"
           placeholder="🔍 Buscar por producto, usuario o estado..."

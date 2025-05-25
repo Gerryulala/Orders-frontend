@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import api from '../services/api';
+import api from '../../services/api';
 import { toast } from 'react-toastify';
-import '../OrderForm.css'; // 🧠 Asegúrate de importar tu CSS
+import '../OrderForm/OrderForm.css'; // 🧠 Asegúrate de importar tu CSS
 
 export default function OrderForm({ onOrderCreated }) {
   const [productos, setProductos] = useState([{ nombre: '', cantidad: 1, precio: 0 }]);

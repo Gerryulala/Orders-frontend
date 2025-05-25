@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { toast } from 'react-toastify';
-import '../App.css';
+import '../styles/App.css';
 
 export default function Register() {
   const [email, setEmail] = useState('');

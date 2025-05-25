@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import OrderForm from './OrderForm';
-import OrderList from './OrderList';
+import OrderForm from '../components/OrderForm/OrderForm';
+import OrderList from '../components/OrderList/OrderList';
 import api from '../services/api';
-import '../OrdersPage.css';
+import '../styles/OrdersPage.css';
 
 export default function OrdersPage() {
   const [orders, setOrders] = useState([]);

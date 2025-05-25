@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { toast } from 'react-toastify';
-import '../App.css';
+import '../styles/App.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -29,7 +29,7 @@ export default function Login() {
       navigate('/orders');
     }
   }, [redirigir, navigate]);
-  
+
  return (
     <div className="form-wrapper">
       <form className="form-container" onSubmit={handleLogin}>
