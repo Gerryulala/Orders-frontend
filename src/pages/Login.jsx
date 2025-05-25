@@ -29,8 +29,8 @@ export default function Login() {
       navigate('/orders');
     }
   }, [redirigir, navigate]);
-
-  return (
+  
+ return (
     <div className="form-wrapper">
       <form className="form-container" onSubmit={handleLogin}>
         <h2>🔐 Iniciar sesión</h2>
@@ -49,6 +49,15 @@ export default function Login() {
           required
         />
         <button type="submit">Iniciar sesión</button>
+        <p style={{ marginTop: '1rem', fontSize: '0.9rem', textAlign: 'center' }}>
+          ¿No tienes cuenta?{' '}
+          <span
+            style={{ color: '#ae66ff', cursor: 'pointer', textDecoration: 'underline' }}
+            onClick={() => navigate('/register')}
+          >
+            Regístrate aquí
+          </span>
+        </p>
       </form>
     </div>
   );

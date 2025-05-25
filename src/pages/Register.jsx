@@ -40,6 +40,15 @@ export default function Register() {
           required
         />
         <button type="submit">Registrarse</button>
+        <p style={{ marginTop: '1rem', fontSize: '0.9rem', textAlign: 'center' }}>
+          ¿Ya tienes una cuenta?{' '}
+          <span
+            style={{ color: '#ae66ff', cursor: 'pointer', textDecoration: 'underline' }}
+            onClick={() => navigate('/login')}
+          >
+            Inicia sesión
+          </span>
+        </p>
       </form>
     </div>
   );
