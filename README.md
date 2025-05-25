@@ -23,7 +23,7 @@ Frontend del proyecto para crear y consultar órdenes de usuarios.
 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ordenes-frontend.git
+git clone git@github.com:Gerryulala/Orders-frontend.git
 cd ordenes-frontend
 ```
 
