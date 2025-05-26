@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: import.meta.env.VITE_API_URL, // 👈 dinámico por entorno
+    withCredentials: true, // opcional: si usas cookies o CORS con auth
 });
 
 // Agrega token automáticamente a todas las peticiones
